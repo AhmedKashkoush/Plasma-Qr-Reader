@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Plasma QR Reader',
+      debugShowCheckedModeBanner: false,
       theme: ThemeHelper.lightTheme,
       darkTheme: ThemeHelper.darkTheme,
       themeMode: ThemeHelper.themeMode,

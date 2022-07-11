@@ -1,10 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:plasma_qr_reader/Shared/theme_helper.dart';
 import 'package:plasma_qr_reader/View/Screens/scan_screen.dart';
+import 'package:plasma_qr_reader/firebase_options.dart';
 
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   const SystemUiOverlayStyle overlayStyle = SystemUiOverlayStyle(statusBarColor: Colors.transparent);
   SystemChrome.setSystemUIOverlayStyle(overlayStyle);
   runApp(const MyApp());

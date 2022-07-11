@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "951530390148",
+    "project_id": "plasma-fecd2",
+    "storage_bucket": "plasma-fecd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951530390148:android:9af6abd8e2638f00c038d1",
+        "android_client_info": {
+          "package_name": "com.example.plasma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951530390148-il1ie5ge5aaogkj9gerj1577331scgc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjzfjXd_G7oKcFfHTH0HLEDf_BA2PBWOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951530390148-il1ie5ge5aaogkj9gerj1577331scgc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951530390148:android:34f2a4a453ab0f98c038d1",
+        "android_client_info": {
+          "package_name": "com.example.plasma_qr_reader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951530390148-il1ie5ge5aaogkj9gerj1577331scgc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjzfjXd_G7oKcFfHTH0HLEDf_BA2PBWOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951530390148-il1ie5ge5aaogkj9gerj1577331scgc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

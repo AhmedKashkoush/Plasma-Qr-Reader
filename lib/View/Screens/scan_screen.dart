@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -174,8 +175,8 @@ class _ScanScreenState extends State<ScanScreen> {
     }
     // Fluttertoast.cancel();
     // Fluttertoast.showToast(msg: code!);
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (context) => ScanResultScreen()),
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(builder: (context) => ScanResultScreen(data: code!,)),
     );
     await Future.delayed(const Duration(seconds: 3), () {
       code = null;

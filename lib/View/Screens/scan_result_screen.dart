@@ -117,6 +117,7 @@ class ScanResultScreen extends StatelessWidget {
                 Expanded(
                   child: Container(
                     margin: const EdgeInsets.all(8),
+                    clipBehavior: Clip.antiAlias,
                     decoration: BoxDecoration(
                       color: Theme.of(context).scaffoldBackgroundColor,
                       borderRadius: BorderRadius.circular(25),
@@ -149,27 +150,28 @@ class ScanResultScreen extends StatelessWidget {
                                     padding: const EdgeInsets.all(18),
                                     children: [
                                       ListTile(
-                                        title: Text('Phone'),
+                                        title: const Text('Phone'),
                                         subtitle: Text('${data!['phone']}'),
-                                        leading: Icon(Icons.phone),
+                                        leading: const Icon(Icons.phone),
                                       ),
                                       ListTile(
-                                        title: Text('National ID'),
+                                        title: const Text('National ID'),
                                         subtitle:
                                             Text('${data['national_id']}'),
                                         leading:
-                                            Icon(Icons.perm_identity_rounded),
+                                            const Icon(Icons.perm_identity_rounded),
                                       ),
                                       ListTile(
-                                        title: Text('Gender'),
-                                        leading: Icon(Icons.male),
+                                        title: const Text('Gender'),
+                                        subtitle: Text('${data['gender']}'),
+                                        leading: data['gender'] == 'male'?const Icon(Icons.male):const Icon(Icons.female),
                                         //leading: Icon(Icons.gen),
                                       ),
                                       if (data['blood_type'] != "")
                                         ListTile(
-                                          title: Text('Blood Type'),
-                                          subtitle: Text('O+'),
-                                          leading: Icon(Icons.bloodtype),
+                                          title: const Text('Blood Type'),
+                                          subtitle: Text('${data['blood_type']}'),
+                                          leading: const Icon(Icons.bloodtype),
                                         ),
                                     ],
                                   ),

@@ -173,6 +173,12 @@ class ScanResultScreen extends StatelessWidget {
                                           subtitle: Text('${data['blood_type']}'),
                                           leading: const Icon(Icons.bloodtype),
                                         ),
+                                      if (data['donating_times'] > 0)
+                                        ListTile(
+                                          title: const Text('Donating Times'),
+                                          subtitle: Text('${data['donating_times']}'),
+                                          leading: const Icon(Icons.water_drop_rounded),
+                                        ),
                                     ],
                                   ),
                   ),
